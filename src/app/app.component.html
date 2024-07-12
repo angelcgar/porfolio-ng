@@ -83,11 +83,64 @@
 
     <div class="grid md:grid-cols-2 gap-4 p-4">
       <!-- todo: traerte toda la logica de CardProjects -->
+
+      @for (project of projects; track $index) {
+      <div class="dark:bg-slate-800 p-5 rounded-xl">
+        <img
+          [src]="project.imageHref"
+          class="w-72 lg:w-96 h-auto m-auto rounded-md aspect-auto"
+          alt=""
+        />
+        <div
+          class="h-8 overflow-hidden inline-flex text-xs my-1 items-center flex-wrap justify-center ml-2"
+        >
+          <!-- todo: traerte la logica de Tags -->
+          <div
+            class="mt-1 mr-1 inline-block font-medium whitespace-nowrap rounded-full pr-2 pl-1 leading-5 text-teal-100 bg-ancg-900 items-center justify-center border-[1px] text-sm my-1 text-center flex-col content-center w-fit border-slate-500"
+          >
+            <div
+              class="inline-flex size-[18px] items-center justify-start overflow-hidden"
+            >
+              <img
+                src="tag"
+                class="w-7 h-auto pt-1 pl-1 aspect-square m-auto"
+              />
+            </div>
+            <span class="ml-1">imageName</span>
+          </div>
+        </div>
+
+        <div class="pl-2">
+          <h2 class="text-2xl font-bold my-4 mx-auto text-center">
+            {{ project.title }}
+          </h2>
+          <p>{{ project.body }}</p>
+        </div>
+
+        <div class="pl-2 flex lg:flex-row flex-col gap-x-4 justify-center">
+          <a
+            class="flex flex-row itslate-500ems-center justify-center dark:bg-sky-900 dark:hover:bg-sky-700/80 hover:bg-gray-200 p-2 mt-5 rounded-md font-medium"
+            target="_blank"
+            rel="noopener"
+            [href]="project.github"
+          >
+            Ver Repositorio</a
+          >
+          <a
+            class="flex flex-row items-center justify-center dark:bg-sky-900 dark:hover:bg-sky-700/80 hover:bg-gray-200 p-2 mt-5 rounded-md font-medium"
+            target="_blank"
+            rel="noopener"
+            [href]="project.href"
+            >Proyecto en vivo</a
+          >
+        </div>
+      </div>
+      }
     </div>
 
     <div class="justify-center flex items-center rounded-sm">
       <a
-        class="dark:bg-indigo-900 px-3 py-2 dark:hover:bg-indigo-700/80 hover:bg-gray-200"
+        class="dark:bg-indigo-900 px-3 py-2 dark:hover:bg-indigo-700/80 hover:bg-gray-200 rounded-md"
         href="/mas-proyectos"
         >Mas proyectos</a
       >

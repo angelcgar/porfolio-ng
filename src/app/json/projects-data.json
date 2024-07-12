@@ -1,0 +1,54 @@
+[
+  {
+    "name": "calculadora",
+    "title": "Mi Calculadora",
+    "body": "Este es mi calculadora más importante de todos mis proyectos",
+    "href": "https://amazing-queijadas-ba02d4.netlify.app/",
+    "imageHref": "/img/calculadora.webp",
+    "github": "https://github.com/angelcgar/calculadora-react",
+    "tags": [
+      "/svg/ViteJs.svg",
+      "/svg/React.svg",
+      "/svg/JavaScript.svg"
+    ]
+  },
+  {
+    "name": "Lista de Tareas",
+    "title": "Mi Lista de Tareas",
+    "body": "Este es mi Lista de Tareas que fue hecho con React, y que se puede ver en mi repositorio de GitHub",
+    "href": "https://faztweb.github.io/react-tasksapp-localstorage/",
+    "imageHref": "/img/listaDeTareas.webp",
+    "github": "https://faztweb.github.io/react-tasksapp-localstorage/",
+    "tags": [
+      "/svg/ViteJs.svg",
+      "/svg/React.svg",
+      "/svg/HTML.svg"
+    ]
+  },
+  {
+    "name": "Documentación",
+    "title": "Documentacion",
+    "body": "Aplicacion Full stack, que se sirve muy rápido y consume una API que yo mismo he programado",
+    "href": "https://documentacion-java.vercel.app/",
+    "imageHref": "/img/documentacion.webp",
+    "github": "https://github.com/angelcgar/documentacion-java",
+    "tags": [
+      "/svg/Astro.svg",
+      "/img/Starlight.webp",
+      "/svg/HTML.svg"
+    ]
+  },
+  {
+    "name": "Candy crush",
+    "title": "Candy crush",
+    "body": "En este proyecto, yo realice un juego con javascript puro, además de que es muy entretenido",
+    "href": "https://candy-crush-es.vercel.app/",
+    "imageHref": "/img/candy-crush.webp",
+    "github": "https://github.com/angelcgar/candy-crush-es",
+    "tags": [
+      "/svg/ViteJs.svg",
+      "/svg/JavaScript.svg",
+      "/svg/CSS.svg"
+    ]
+  }
+]
